@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
+
+        <!-- HTML5 Shim and Respond.js add IE8 support of HTML5 elements and media queries -->
+        {% include 'BraincraftedBootstrapBundle::ie8-support.html.twig' %}
+
+    </head>
+    <body>
+
+<ul>
+
+    {% block login_logout_panel %}
+        <ul>
+            <li>
+                <a href="{{ path('homepage') }}">
+                    Homepage
+                </a>
+            </li>
+
+
+            <!-- A -->
+
+            <!-- B -->
+
+            <!-- C -->
+
+            <!-- D -->
+
+            <!-- E -->
+
+            <!-- F -->
+
+            <!-- G -->
+
+            <!-- H -->
+
+            <!-- I -->
+
+            <!-- J -->
+
+            <!-- K -->
+
+            <!-- L -->
+
+            <!-- M -->
+
+            <!-- N -->
+
+            <!-- O -->
+
+            <!-- P -->
+
+            <!-- Q -->
+
+            <!-- R -->
+
+            <!-- S -->
+
+            <!-- T -->
+
+            <!-- U -->
+
+            <!-- V -->
+
+            <!-- W -->
+
+            <!-- X -->
+
+            <!-- Y -->
+
+            <!-- Z -->
+
+
+
+            {% if is_granted('ROLE_USER') %}
+                <li>Logged in as {{ app.user.username }}</li>
+                <li>
+                    <a href="{{ path('fos_user_security_logout') }}">
+                        {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('admin_reptile') }}">
+                        Reptiles
+                    </a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{{ path('fos_user_security_login') }}">
+                        {{ 'layout.login'|trans({}, 'FOSUserBundle') }}
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    {% endblock login_logout_panel %}
+
+
+
+
+
+</ul>
+    {% block body %}{% endblock %}
+
+    <footer>Version: 0.0.0</footer>
+
+        <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+        <script src="{{ asset('js/jquery.js') }}"></script>
+        <!-- Include all JavaScripts, compiled by Assetic -->
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+    </body>
+</html>
