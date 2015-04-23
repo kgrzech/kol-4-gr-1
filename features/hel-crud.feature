@@ -66,6 +66,6 @@ Feature: I would like to edit hel
 
   Examples:
     |  hel            |
-    | Bałtycka        |
+    | Dworcowa        |
     | B-A-L-T-Y-C-K-A |
     | B-O-C-Z-N-A     |
