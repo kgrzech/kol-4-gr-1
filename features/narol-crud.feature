@@ -10,7 +10,7 @@ Feature: I would like to edit narol
     And I go to "/admin/narol/"
     Then I should not see "<narol>"
     And I follow "Create a new entry"
-    Then I should see "Street creation"
+    Then I should see "Narol creation"
     When I fill in "Name" with "<narol>"
     And I fill in "Caption" with "<caption>"
     And I fill in "Size" with "<size>"
