@@ -50,7 +50,7 @@ Feature: I would like to edit elk
   Examples:
     | old-elk     | new-caption           | new-size    |
     | jagienki    | N-E-W-J-A-G           | 8888        |
-    | sosnowa     | S-O-S-S-O-S           | 9999         |
+    | sosnowa     | S-O-S-S-O-S           | 9999        |
 
 
   Scenario Outline: Delete records
