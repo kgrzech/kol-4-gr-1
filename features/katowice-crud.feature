@@ -16,7 +16,7 @@ Feature: I would like to edit katowice
      And I press "Create"
     Then I should see "<katowice>"
      And I should see "<caption>"
-     And I should see "<size"
+     And I should see "<size>"
 
   Examples:
     | katowice     | caption     | size|
@@ -35,11 +35,11 @@ Feature: I would like to edit katowice
      And I go to "/admin/katowice/"
     Then I should not see "<new-katowice>"
     When I follow "<old-katowice>"
-    Then I should see "<old-katowice"
+    Then I should see "<old-katowice>"
     When I follow "Edit"
      And I fill in "Name" with "<new-katowice>"
      And I fill in "Caption" with "<new-caption>"
-     And I fill in "Caption" with "<new-size>"
+     And I fill in "Size" with "<new-size>"
      And I press "Update"
      And I follow "Back to the list"
     Then I should see "<new-katowice>"
