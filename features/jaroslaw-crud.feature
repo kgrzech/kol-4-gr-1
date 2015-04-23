@@ -1,16 +1,12 @@
 Feature: I would like to edit jaroslaw
 
-  Scenario: jaroslaw nemu
-    Given I am on homepage
-    When I follow "Jaroslaw" 
-    Then I should see "Brzostkow"
-
   Scenario Outline: Insert records
    Given I am on homepage
      And I follow "Login"
      And I fill in "Username" with "admin"
      And I fill in "Password" with "loremipsum"
      And I press "Login"
+     And I follow "Jaroslaw"
      And I go to "/admin/jaroslaw/"
     Then I should not see "<name>"
      And I follow "Create a new entry"
@@ -27,7 +23,7 @@ Feature: I would like to edit jaroslaw
     | name        | caption         | size |
     | Akacjowa    | wewnetrzna      |   4  |
     | Basztowa    | gminna          |   2  |
-    | Brzostkow   | powiatowa       |   2 |
+    | Brzostkow   | powiatowa       |   2  |
 
 
 
@@ -37,6 +33,7 @@ Feature: I would like to edit jaroslaw
      And I fill in "Username" with "admin"
      And I fill in "Password" with "loremipsum"
      And I press "Login"
+     And I follow "Jaroslaw"
      And I go to "/admin/jaroslaw/"
     Then I should not see "<new-name>"
     When I follow "<old-name>"
@@ -64,6 +61,7 @@ Feature: I would like to edit jaroslaw
      And I fill in "Username" with "admin"
      And I fill in "Password" with "loremipsum"
      And I press "Login"
+     And I follow "Jaroslaw"
      And I go to "/admin/jaroslaw/"
     Then I should see "<name>"
     When I follow "<name>"
