@@ -9,7 +9,7 @@ Feature: I would like to edit Dabrowa
     And I go to "/admin/dabrowa/"
     Then I should not see "<dabrowa>"
     And I follow "Create a new entry"
-    Then I should see "Bears creation"
+    Then I should see "Dabrowa creation"
     When I fill in "Name" with "<dabrowa>"
     And I fill in "Caption" with "<caption>"
     And I fill in "Size" with "<size>"
