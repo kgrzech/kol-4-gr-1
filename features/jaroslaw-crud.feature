@@ -1,5 +1,10 @@
 Feature: I would like to edit jaroslaw
 
+  Scenario: jaroslaw nemu
+    Given I am on homepage
+    When I follow "Jaroslaw" 
+    Then I should see "Brzostkow"
+
   Scenario Outline: Insert records
    Given I am on homepage
      And I follow "Login"
