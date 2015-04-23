@@ -69,5 +69,4 @@ Feature: I would like to edit lublin
   Examples:
     |  lublin     |
     | Radości     |
-    | Sympatyczna |
     | Bursztynowa |
