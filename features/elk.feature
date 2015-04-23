@@ -39,17 +39,17 @@ Feature: I would like to edit elk
     When I follow "Edit"
      And I fill in "Name" with "<new-elk>"
      And I fill in "Caption" with "<new-caption>"
-     And I fill in "" with "<new-price>"
+     And I fill in "Size" with "<new-size>"
      And I press "Update"
      And I follow "Back to the list"
     Then I should see "<new-elk>"
-     And I should see "<new-description>"
-     And I should see "<new-price>"
+     And I should see "<new-caption>"
+     And I should see "<new-size>"
      And I should not see "<old-elk>"
 
   Examples:
-    | old-elk     | new-description       | new-price    |
-    | jagienki    | N-E-W-J-A-G           | 888 8        |
+    | old-elk     | new-caption           | new-size    |
+    | jagienki    | N-E-W-J-A-G           | 8888        |
     | sosnowa     | S-O-S-S-O-S           | 9999         |
 
 
