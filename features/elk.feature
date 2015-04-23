@@ -48,9 +48,9 @@ Feature: I would like to edit elk
      And I should not see "<old-elk>"
 
   Examples:
-    | old-elk     | new-caption           | new-size    |
-    | jagienki    | N-E-W-J-A-G           | 8888        |
-    | sosnowa     | S-O-S-S-O-S           | 9999        |
+    | old-elk     | new-elk     |   new-caption        | new-size    |
+    | jagienki    | N-E-W-J-A-G |   ala ma kota        | 8888        |
+    | sosnowa     | S-O-S-S-O-S |   zadam to i tyle    | 9999        |
 
 
   Scenario Outline: Delete records
