@@ -1,7 +1,7 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Bialystok list</h1>
+    <h1>bialystok list</h1>
 
     <table class="records_list">
         <thead>
@@ -17,7 +17,7 @@
         {% for entity in entities %}
             <tr>
                 <td><a href="{{ path('admin_bialystok_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>{{ entity.name }}</td>
+                <td><a href="{{ path('admin_bialystok_show', { 'id': entity.id }) }}">{{ entity.name }}</a></td>
                 <td>{{ entity.caption }}</td>
                 <td>{{ entity.size }}</td>
                 <td>
