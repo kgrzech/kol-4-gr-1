@@ -49,8 +49,8 @@ Feature: I would like to edit Krasnik
 
   Examples:
     |old-krasnik |new-krasnik |new-caption    |new-size|
-    |mlynska     |wierzbowa   |ul. wierzbowa   |48      |
-    |krotka      |swierkowa   |ul. swierkowa   |59      |
+    |mlynska     |wierzbowa   |ul. wierzbowa  |48      |
+    |krotka      |swierkowa   |ul. swierkowa  |59      |
 
 
   Scenario Outline: Delete records
@@ -68,6 +68,6 @@ Feature: I would like to edit Krasnik
 
   Examples:
     |krasnik    |
-    |wierzbowa      |
-    |strazacka   |
-    |swierkowa |
+    |wierzbowa  |
+    |strazacka  |
+    |swierkowa  |
